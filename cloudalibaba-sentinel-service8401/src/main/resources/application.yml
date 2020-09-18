@@ -8,10 +8,11 @@ spring:
     nacos:
       discovery:
         server-addr: 172.22.190.246:8848
-      sentinel:
-        transport:
-          dashboard: 172.22.190.227:30779
-          port: 8719
+    sentinel:
+      transport:
+        dashboard: 172.22.190.169:8858
+        port: 8719
+        clientIp: 172.22.190.34
 
 management:
   endpoints:
